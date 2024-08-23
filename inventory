@@ -4,3 +4,4 @@ roboshop-us-dev-db-mongodb-01.sivadevops.website
 [mongodb:vars]
 MONGO_USERNAME=mongodbadmin
 MONGO_DB=categories
+NAME=siva-inventory
