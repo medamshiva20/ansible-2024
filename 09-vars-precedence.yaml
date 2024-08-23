@@ -16,9 +16,10 @@
      ansible.builtin.debug:
       msg: "Trainer name is:{{NAME}}"
 
-# 1.command line variables
+#1.command line variables
 #2.task level
 #3.vars_files
 #4.prompt level
 #5.play level
-#
+#6.inventory level
+#7.Roles
