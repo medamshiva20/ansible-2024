@@ -1,10 +1,10 @@
 ---
 - name: create user
-  hosts: mongodb
+  hosts: localhost
   tasks:
    - name: check roboshop user exist or not 
      ansible.builtin.command: id roboshop
-     register: output #output is variable name
+     register: output #output is variable
      ignore_errors: true
    - name: print the command output
      ansible.builtin.debug:
@@ -16,4 +16,3 @@
      ansible.builtin.user:
       name: roboshop
      when: output.rc =! 0
-...
