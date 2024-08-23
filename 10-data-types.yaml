@@ -1,9 +1,9 @@
 - name: ansible variable data types
   hosts: mongodb
   vars:
-     AGE: 30
-     NAME: "Siva"
-     isDevOps: true
+   - AGE: 30
+   - NAME: "Siva"
+   - isDevOps: true
    - Skills:
       - DevOps
       - AWS
