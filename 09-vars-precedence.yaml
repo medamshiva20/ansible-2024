@@ -11,7 +11,11 @@
      private: false
   tasks:
    - name: variable at task level
-     vars:
-      NAME: siva-task
+    #  vars:
+    #   NAME: siva-task
      ansible.builtin.debug:
       msg: "Trainer name is:{{NAME}}"
+
+# 1.command line variables
+#2.task level
+#3.
