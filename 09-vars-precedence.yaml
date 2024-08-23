@@ -2,13 +2,13 @@
 - name: testing variable precedence
   hosts: mongodb
   vars:
-   - NAME: siva-task
+   - NAME: siva-play
   # vars_files:
   #  - variables.yaml
-  vars_prompt:
-   - name: NAME
-     prompt: Please enter tariner Name
-     private: false
+  # vars_prompt:
+  #  - name: NAME
+  #    prompt: Please enter tariner Name
+  #    private: false
   tasks:
    - name: variable at task level
     #  vars:
@@ -19,4 +19,4 @@
 # 1.command line variables
 #2.task level
 #3.vars_files
-#4.
+#4.prompt level
