@@ -15,7 +15,7 @@
   - name: print exit status
     ansible.builtin.debug:
       msg: "{{out.rc}}"
-    name: create user roboshop
+  - name: create user roboshop
     become: yes # we need sudo access for this task only
     ansible.builtin.user:
       name: roboshop
