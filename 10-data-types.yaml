@@ -1,0 +1,27 @@
+- name: ansible variable data types
+  hosts: mongodb
+  vars:
+   - AGE: 30
+   - NAME: "Siva"
+   - isDevOps: true
+   - Skills:
+      - DevOps
+      - AWS
+      - Docker
+   - EXPERIENCE:
+      DevOps: 7
+      AWS: 5
+      Docker: 4
+  tasks:
+   - name: print number variable
+     ansible.builtin.debug:
+      msg: "{{AGE}}"
+   - name: print string variable
+     ansible.builtin.debug:
+      msg: "{{NAME}}"
+   - name: print boolean variable
+     ansible.builtin.debug:
+      msg: "{{isDevOps}}"
+   - name: print list variable
+     ansible.builtin.debug:
+      msg: "{{EXPERIENCE}}"
