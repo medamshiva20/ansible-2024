@@ -6,6 +6,7 @@
      ansible.builtin.yum: 
       name: "{{item.name}}"
       state: "{{item.state}}"
+      #this is map
      with_items:
       - {name: nginx, state: absent}
       - {name: postfix,state: absent}
