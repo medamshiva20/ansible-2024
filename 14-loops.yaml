@@ -1,5 +1,6 @@
 - name: Implementing loops 
   hosts: mongodb
+  become: yes
   tasks:
    - name: Install packages using loops
      ansible.builtin.yum:
